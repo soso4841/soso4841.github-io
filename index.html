@@ -7,7 +7,7 @@
 		padding: 0;
 		margin: 0;
 		}
-		body{background-color: #ffffe6;
+		body{background-color:  #f2e6d9
 		}
 		.clear{clear: both;}
 		header{width: 2000px;
@@ -37,54 +37,71 @@
 			height: 70px;
 			margin-top: 5px;
 			border:  solid 1px none;
-			background-color: #e8dbc9;
+			background-color: #565043;
+			color: #e8dbc9;
 			}
 			nav li{float: left;
 				color:  #261a0d;
-				margin: 30px 150px;}
-				li{list-style: none;}
-		section{
+				margin: 30px 120px;
+				list-style: none;}
+			nav p
+			{color: #362917;}
+		#top_nav{
 			margin-top: 10px;
 			border: solid 1 #cccccc;}
-		aside{background-color: #adad85
-			margin-left: 10px;
-			margin-right: 20px;
+			#middle_content{margin-left: 70px;}
+			#event1{margin: 20px;}
+			#goods{margin: 20px;
+				}
+		aside{
+			color: #e8dbc9;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			margin-right: 100px;
 			border: solid 1px #cccccc;
 			width: 500px;
-			height: 500px;
-			background-color: #f2e6d9;
+			height: 550px;
+			background-color: #362917;
 			float: right;}
 			.main{display: block;}
 			#mainphoto{border: solid 1px #cccccc;
-				width: 1000px;
-				height:500px;
-				margin:10px 20px;
-				float: left;}
+				width: 600px;
+				height:650px;
+				margin:20px 20px;
+				float: left;
+				background-color: #362917;
+				color: #e8dbc9;
+				padding: 10px;}
 				#mainimg{float: left;
-				margin: 20px 30px;}
-				.main_text{border:solid 1px #cccccc;
+				margin: 30px 30px;}
+				.main_text{background-color: #565043;
 					font-size: 20px;
-					padding: 5px 5px px 0px;}
-					#main_menu{border:solid 1px #cccccc;
+					padding: 5px 10px;
+					margin:10px;}
+					#main_menu{background-color: #565043;
+						margin:10px;
 								padding: 20px 40px;}
 					#main_menu li{list-style: circle;}
 		.arrow_text{display: inline;}
 		.current{display: inline;
 			margin:20px 20px; }
+
 		table{margin-bottom: 20px;
 					border: solid 1.5px #cccccc;
-					width:200px;
-					height:200px;
+					width:400px;
+					height:400px;
 					margin: 10px 30px; }
 			table, th, td {background-color: white;
 				border: solid 1px #cccccc;
 				border-collapse: collapse;}
 				#maincontent{font-weight: bold;
 							font-size: 30px;
-							color: #362917;
+							color: #e8dbc9;
+							background-color: #362917;
 							}
+							.calendarmonth_calendartable{color:black;}
 			.calendar-controls{border:solid 1px #cccccc;
-								background-color::#565043;
+								background-color::#362917;
 								padding: 5px;}
 				.header_c0{color:red;}
 				.header_c1{color: black}
@@ -94,6 +111,7 @@
 							margin-top: 25px; }
 					.nottoday_dayblank_cell{padding: 10px 25px 10px 15px;}
 					.day_nottoday_cell{padding: 10px 15px 10px 35px;}
+
 
 			#img{border: solid 1px #cccccc;}
 		footer{width: 2000px;
@@ -108,21 +126,16 @@
 				margin: 50px 0 10px 20px;
 				text-align: left;
 				font-size: 15px;}
-			.dropdown{float: left;
-			display:block;}
-			.dropdown li{color:#362917;}
+	.dropdown{
+			display: inline;
+		}
 		.dropdown-content{display: none;
 			position: absolute;
-			background-color: #e0e0d1;
+			background-color: #d5d5c3;
 			width: 100px;
-			padding: 30px 15px;}
-		.dropdown:hover .dropdown-content{display: inline-block;
-			margin: 70px 0px;}
-		.dropdown-content p{border-bottom: solid 2px #6b6b47;
-							margin: 10px 0px;
-							padding: 5px 0px;}
-		
-			
+			padding: 12px 16px;}
+		.dropdown:hover .dropdown-content{display: inline;}
+
 	</style>
 </head>
 <body>
@@ -132,47 +145,41 @@
 	<div id="hometext"><span id="hometext1">The cat</span><span id="hometext2">.hompage</span></div>
 <div id="top">로그인 | 회원가입 | 마이페이지 | 고객센터</div>
 </header>
-<section>
+<section #id="top_nav">
 <nav>
-	<ul>
-		<div class="dropdown"><li>공지사항</li>
+	<div class="dropdown"><span>홈</span>
+	</div>
+	<div class="dropdown"><span>공지사항</span>
 		<div class="dropdown-content">
-		<p>중요공지</p>
-		<p>이벤트</p>
-		</div></div>
-		<div class="dropdown"><li>고양이 정보</li>
+	<p>중요 공지</p>
+	<p>이벤트</p>
+	</div>
+</div>
+	<div class="dropdown"><span>고양이</span>
 		<div class="dropdown-content">
-		<ul>
-		<p>공통특징</p>	
-		<p>품종</p>
-		<p>품종별특징</p>
-		</div></div>
-		<div class="dropdown">
-			<li>고양이사육법</li>
+	<p>집냥이</p>
+	<p>길냥이</p>
+	<p>새끼냥이</p></div>
+	</div>
+<div class="dropdown">
+	<span>용품</span>
 		<div class="dropdown-content">
-			<p>집냥이</p>
-			<p>길냥이</p>
-			<p>새끼냥이</p>
-		</div></div>
-		<div class="dropdown"><li>고양이 용품추천</li>
-		<div class="dropdown-content">
-		<p>사료</p>
-		<p>간식</p>
-		<p>장난감</p>
-		<p>설치 용품</p>
-		</div></div>
-	</ul>
-</div></section>
-</nav>
+	<p>사료/간식</p>
+	<p>장난감</p>
+	<p>설치 용품</p></div>
+	</div>
+	</nav>
+</section>
 
 </section>
 </center>
-<section class="clear">
-	<section>
+<section class="clear"></section>
+	<section id="middle_content">
 		<div class="main">
 	<div id="mainphoto"><span id="maincontent">HighLight</span>
 		<h3 class="main_text">홈페이지 방문을 환영합니다.</h3>
 		<img id="mainimg" src="catimage01.jpg" width="500" height="300px" id="img">
+		<section class="clear"></section>
 		<div>
 		<h2>빠른 메뉴</h2>
 		<ul id="main_menu">
@@ -184,13 +191,14 @@
 		</div>
 	</div>
 <div class="main">
+	<img id="event1" src="event1.png" width="300px" height="300px;"><br><img id="goods" src="goods.png" width="300px" height="300px;"><section class="clear"></section>
 <aside>
 	<center>
 	<span id="maincontent">일정 모아보기</span>
 					<div class="calendar-controls"><span class="arrow_text">◄&nbsp;2019년 5월</span> |
 					<h1 class="current">2019년 6월</h1> | <span class="arrow_text">2019년 7월&nbsp;►</span><span class="clearer"><!-- --></span></div>
 
-<table class="calendarmonth calendartable" summary="2019년 6월 달력">
+<table class="calendarmonth_calendartable" summary="2019년 6월 달력">
 <thead>
 <tr>
 <th class="header_c0" style="" scope="col">일</th>
